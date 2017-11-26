@@ -1,0 +1,19 @@
+---
+layout: index
+title: Welcome!
+---
+<p>I'm Ted Reed, a programmer and sysadmin. I dabble in a variety of things, and this site serves as a sort of vanity site for those sorts of things.</p>
+
+<p>As for basic information about me: I <a href="http://www.goodreads.com/user/show/6397529-ted-reed">read</a>, <a href="http://github.com/treed">code</a>, enjoy music, <a href="/movies.html">movies and TV</a>, play <a href="/games.html">video</a> and <a href="https://boardgamegeek.com/collection/user/TedReed?geekranks=Board+Game+Rank&objecttype=thing&own=1&ff=1&subtype=boardgame">board/card</a> games, and enjoy the use of the <a href="http://en.wikipedia.org/wiki/Serial_comma">Oxford Comma</a>. I also have interests in linguistics and history. The places where those two items meet is particularly fascinating to me.</a>
+
+<p>I am a huge fan of soccer, and an <a href="https://i.imgur.com/HKuT8wD.jpg">avid supporter</a> (I'm one of the ones holding up the message banner, right in the middle) of the <a href="http://sjearthquakes.com">San Jose Earthquakes</a> and the <a href="http://ussoccer.com">US</a> Men's, Women's, and Youth teams.</p>
+
+<p>I'm originally from Southern California, an area east of Los Angeles the locals refer to as the Inland Empire. I now live in Silicon Valley, and very much prefer everything about it as compared to the IE, except the housing prices.</p>
+
+<p>Here are some blog posts:</p>
+
+<ul class="posts">
+  {% for post in site.posts limit:5 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
